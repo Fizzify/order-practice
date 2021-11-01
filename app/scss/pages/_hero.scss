@@ -1,0 +1,100 @@
+.hero {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .container {
+    .card {
+      transform: scale(0.9);
+      margin: 5em;
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: rgba(0, 0, 0, 0.159) 0px 6px 30px 1px;
+
+      h2 {
+        margin-top: 1.2em;
+      }
+
+      img {
+        border-radius: 20px 20px 0 0;
+      }
+
+      p {
+        display: inline-block;
+        width: 300px;
+      }
+
+      .subtitle {
+        margin-top: 1em;
+        color: rgb(78, 87, 99);
+      }
+
+      .plan {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-top: 2em;
+        padding: 0.5em;
+        background: $secondaryColorVeryPaleBlue;
+
+        a {
+          p {
+            font-weight: bold;
+          }
+        }
+
+        .year {
+          color: rgb(78, 87, 99);
+        }
+
+        .change {
+            color: $primaryColorBrightBlue;
+          margin-top: 0.5em;
+          transition: all 0.3s ease;
+
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+
+      .payment {
+        a {
+          text-decoration: none;
+        }
+
+        .proceed {
+          padding: 1em;
+          transition: all 0.3s ease;
+          background-color: $primaryColorBrightBlue;
+
+          &:hover {
+            opacity: 0.7;
+          }
+
+          a {
+            color: white;
+          }
+        }
+
+        .cancel {
+          margin: 1em;
+          padding-bottom: 2em;
+
+          a {
+            color: rgba(78, 87, 99, 0.65);
+            transition: all 0.3s ease;
+
+            &:hover {
+              color: rgba(78, 87, 99, 1);
+            }
+          }
+        }
+      }
+    }
+  }
+}
